@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="inp1" value="北京市">
+        <input type="text" id="inp2" value="朝阳区">
+        <input type="button" id="but" value="传参" > 
+    </div>
+</body>
+<style>
+    
+</style>
+<script>
+    let inp1 = document.getElementById("inp1")
+    let inp2 = document.getElementById("inp2")
+    let but = document.getElementById("but")
+    but.onclick = function(){
+        alert(inp1.value);
+        alert(inp2.value)
+    }
+</script>
+</html>

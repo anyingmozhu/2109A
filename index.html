@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1">
+        <input type="button" value="变宽" onclick="q()">
+        <input type="button" value="变高" onclick="w()">
+        <input type="button" value="变色" onclick="e()">
+        <input type="button" value="隐藏" onclick="r()">
+        <input type="button" value="重置" onclick="t()">
+        <div id="box2"></div>
+    </div>
+</body>
+<style>
+    #box1 {width:500px; margin: 0 auto;padding: 0;text-align: center;}
+    #box2 {
+        background-color: black; width: 100px; height: 100px;
+        margin: 10px auto;
+    }
+</style>
+<script>
+    var cb = document.getElementById("box2")
+    function q(){
+        cb.style.width = "200px"
+    }
+    function w(){
+        cb.style.height = "200px"
+    }
+    function e(){
+        cb.style.backgroundColor = "red"
+    }
+    function r(){
+        cb.style.visibility = "hidden"
+    }
+    function t(){
+        cb.style.cssText = "background-color:black; width: 100px; height: 100px; "
+    }
+</script>
+</html>
